@@ -7588,3 +7588,11 @@ button.close {
     display: none !important;
   }
 }
+/* line 7, ../sass/enlon.sass */
+.navbar-wrapper {
+  margin-top: 10pt;
+}
+/* line 10, ../sass/enlon.sass */
+.navbar-wrapper .navbar-static-top {
+  border-radius: 5px;
+}

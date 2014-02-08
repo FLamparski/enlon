@@ -16,10 +16,72 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-target="#enlon-navbar">
+    <!-- Navbar -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <!-- The items: [NAME] home ingress communities -->
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enlightened London</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="enlon-navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#top">Welcome</a></li>
+                            <li><a href="#ingress">Ingress</a></li>
+                            <li><a href="#who">Who are we?</a></li>
+                            <li><a href="#communities">Communities</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron enlon-jumbotron" id="top">
+            <h1>We are Enlightened London</h1>
+            <p>We are the London community for the Enlightened faction in Niantic Project's Ingress.</p>
+            <p><a class="btn btn-primary btn-lg" role="button" href="#who">Who are we?</a>
+            <a class="btn btn-default btn-lg" role="button" href="#ingress">What is Ingress?</a></p>
+        </div>
+
+        <section class="row" id="ingress">
+            <div class="col-xs-9">
+                <h2>Ingress <small>The world around you is not what it seems</small></h2>
+                <blockquote>Ingress is a near-real time augmented reality massively multiplayer online pervasive game created by Niantic Labs, a start up within Google, currently for Android devices, but, expected to be available for Apple's iOS in 2014. The game has a complex science fiction back story with a continuous open narrative.
+                <footer><cite title="Ingress - Wikipedia">Wikipedia</cite> on Ingress</blockquote>
+                <p>Some Ingress story should go here.</p>
+                <h3>The Enlightened <small>The XM will set you free</small></h3>
+                <p>We are the Green Faction. We side with the Shapers to bring XM to Earth, because we believe
+                that it will be good for humanity.</p>
+                <p>We also love cake.</p>
+            </div>
+            <div class="col-xs-3">
+                <div class="thumbnail">
+                <img src="http://placehold.it/300x200" />
+                <div class="caption">
+                <h3>Getting Ingress</h3>
+                <p>Ingress is now out of beta, and can be downloaded from the Play Store.
+                You will need a Google account. iOS version is said to be coming soon.</p>
+                <p><a class="btn btn-primary" role="link" href="https://play.google.com/store/apps/details?id=com.nianticproject.ingress"><i class="glyphicon glyphicon-save"></i> Download</a> <a class="btn btn-info" role="link" href="http://ingress.com">Official website</a></p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/javascripts/bootstrap/collapse.js"></script>
   </body>
 </html>
