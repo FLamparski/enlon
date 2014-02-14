@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
 
-compass compile
-python -m SimpleHTTPServer
+compass watch&
+python -m SimpleHTTPServer&
+open mw-article.html

@@ -1,7 +1,36 @@
 // Customisation goes here
+// Need to import the font first
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Coda)
+
+$font-family-sans-serif: "Source Sans Pro", "Ubuntu", "Trebuchet MS", "Verdana", "Helvetica Neue", sans-serif
+$headings-font-family: "Coda", $font-family-sans-serif
+
+$font-size-base: 16px // Source Sans Pro is quite small
 
 // Make life easier
 @import "bootstrap"
+
+// stackoverflow.com/questions/19893187
+.navbar-input-group
+  @media (min-width: $screen-sm) 
+    font-size: 0px /*removes whitespace between button and input*/
+
+    input
+      border-top-right-radius: 0px
+      border-bottom-right-radius: 0px
+    
+    .btn
+      border-top-left-radius: 0px
+      border-bottom-left-radius: 0px
+      border-left: 0px
+   
+  @media (max-width: $screen-xs-max) 
+    margin-top: 0px
+    margin-bottom: 0px
+
+    /*.btn
+      width: 100%
+  
 
 // Now the site itself
 .navbar-wrapper
@@ -9,3 +38,29 @@
 
   .navbar-static-top
     border-radius: 5px
+
+#navbar-search-form
+  margin-right: 10px
+  @media (max-width: $screen-sm)
+    .form-group
+      min-width: 80%
+      width: auto
+      display: inline-block
+    .btn-default
+      margin-bottom: 5px
+
+.mw-site-messages
+  .alert
+    padding-top: 5px
+    padding-bottom: 5px
+    margin-bottom: 11px
+
+.mw-redlink
+  color: darken(#f00, 33%)
+
+.mw-link-interwiki
+  color: lighten($link-color, 10%)
+
+.mw-link-external
+  .glyphicon
+    font-size: 14px
