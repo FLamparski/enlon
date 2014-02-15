@@ -58,10 +58,24 @@
                             <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
                             
                         </form>
-                        <p class="navbar-text navbar-right">
-                            <i class="glyphicon glyphicon-user"></i>
-                            <a href="#" class="navbar-link">Minkovsky <span class="badge">4</span></a>
-                        </p>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Minkovsky <span class="badge">4</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Notifications <span class="badge">2</span></a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Messages <span class="badge">2</span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-file"></i> My page</a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Talk</a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Preferences</a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i> Beta</a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i> Watchlist</a></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-book"></i> Contributions</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                         
                     </div>
                 </div>
@@ -88,16 +102,68 @@
                 You are banned from editing this page.
             </div>
         </div>
+    </div>
 
+    <!--<div id="mw-toc-affix" class="affix visible-xl"
+        data-spy="affix" data-offset-top="60px" data-offset-bottom="200px">
+        <div class="mw-toc panel panel-primary pull-right">
+            <div class="panel-heading"><span class="panel-title">Table of Contents</span></div>
+            <div class="panel-body">
+                <ol>
+                    <li><a href="#">Heading 1</a></li>
+                    <li>
+                        <a href="#">Heading 1</a>
+                        <ol>
+                            <li><a href="#">Heading 2</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="container">
         <article>
-            <div class="panel panel-default">
-                <div class="panel-heading"><h3 class="panel-title">Page issues <small>TODO: make this collapsible</small></h3></div>
-                <div class="panel-body">
+            <div class="page-header"><h1>Page title</h1></div>
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <button type="button" class="btn btn-xs btn-default pull-right" data-toggle="collapse" data-target=".mw-pagemessages-collapse">
+                        <span class="sr-only">Toggle page issues</span>
+                        <i class="glyphicon glyphicon-th-list"></i>
+                    </button>
+                    <span class="panel-title">Page issues <span class="badge">1</span></span>
+                </div>
+                <div class="panel-body collapse mw-pagemessages-collapse" id="mw-pagemessages">
                     <div class="alert alert-info">There is some <strong>meaningless Latin-looking text</strong> on this page.</div>
                 </div>
             </div>
-            <h1>Page title</h1><hr />
+            <div class="alert alert-info" id="mw-redirnotice">
+                <i class="glyphicon glyphicon-share"></i> Redirected from <a href="#" class="mw-link">Another Page</a>
+            </div>
+            <aside id="mw-toc-inflow">
+                <div class="mw-toc panel panel-primary">
+                    <div class="panel-heading"><span class="panel-title">Table of Contents</span></div>
+                    <div class="panel-body">
+                        <ol>
+                            <li><a href="#">Heading 1</a></li>
+                            <li>
+                                <a href="#">Heading 1</a>
+                                <ol>
+                                    <li><a href="#">Heading 2</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+            
             <p>Cras <strong>justo odio</strong>, dapibus ac <a href="#" class="mw-link">facilisis</a> in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <a href="#" class="mw-link-external"><i class="glyphicon glyphicon-globe"></i> Nullam</a> id dolor id nibh ultricies <a href="#" class="mw-redlink">vehicula</a> ut id elit. When building a skin you'll be working with your skin name in three forms, a lower-cased key, a camel cased <a href="#" class="mw-link-interwiki">identifier</a>, and a localized skin name. For our skin the key would typically be 'myskin', the identifier 'MySkin', and the localized name 'My Skin'. That's the normal convention to follow, but you can use a different convention on your own, just remember that the key and identifier should only contain characters from the latin alphabet, you may have problems if the very start of the identifier is a number, neither may contain spaces, and the key must be entirely lower-case. The localized name should be the name you want people to see when they actually pick your skin and it may end up translated into another language.</p>
+            <h1>Heading 1</h1>
+            <p>Cras <strong>justo odio</strong>, dapibus ac <a href="#" class="mw-link">facilisis</a> in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <a href="#" class="mw-link-external"><i class="glyphicon glyphicon-globe"></i> Nullam</a> id dolor id nibh ultricies <a href="#" class="mw-redlink">vehicula</a> ut id elit. When building a skin you'll be working with your skin name in three forms, a lower-cased key, a camel cased <a href="#" class="mw-link-interwiki">identifier</a>, and a localized skin name. For our skin the key would typically be 'myskin', the identifier 'MySkin', and the localized name 'My Skin'. That's the normal convention to follow, but you can use a different convention on your own, just remember that the key and identifier should only contain characters from the latin alphabet, you may have problems if the very start of the identifier is a number, neither may contain spaces, and the key must be entirely lower-case. The localized name should be the name you want people to see when they actually pick your skin and it may end up translated into another language.</p>
+            <h1>Heading 1</h1>
+            <p>Cras <strong>justo odio</strong>, dapibus ac <a href="#" class="mw-link">facilisis</a> in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <a href="#" class="mw-link-external"><i class="glyphicon glyphicon-globe"></i> Nullam</a> id dolor id nibh ultricies <a href="#" class="mw-redlink">vehicula</a> ut id elit. When building a skin you'll be working with your skin name in three forms, a lower-cased key, a camel cased <a href="#" class="mw-link-interwiki">identifier</a>, and a localized skin name.</p>
+            <h2>Heading 2</h2>
+            <p>For our skin the key would typically be 'myskin', the identifier 'MySkin', and the localized name 'My Skin'. That's the normal convention to follow, but you can use a different convention on your own, just remember that the key and identifier should only contain characters from the latin alphabet, you may have problems if the very start of the identifier is a number, neither may contain spaces, and the key must be entirely lower-case. The localized name should be the name you want people to see when they actually pick your skin and it may end up translated into another language.</p>
         </article>
     </div>
 
@@ -106,5 +172,7 @@
     <script src="./javascripts/bootstrap/scrollspy.js"></script>
     <script src="./javascripts/bootstrap/collapse.js"></script>
     <script src="./javascripts/bootstrap/dropdown.js"></script>
+    <script src="./javascripts/bootstrap/alert.js"></script>
+    <script src="./javascripts/bootstrap/affix.js"></script>
   </body>
 </html>

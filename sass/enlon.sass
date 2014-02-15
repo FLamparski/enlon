@@ -64,3 +64,20 @@ $font-size-base: 16px // Source Sans Pro is quite small
 .mw-link-external
   .glyphicon
     font-size: 14px
+
+.visible-xl
+  @media (max-width: 1500px)
+    display: none
+
+.hidden-xl
+  @media (min-width: 1500px)
+    display: none
+
+#mw-toc-inflow
+  +make-md-column(3)
+  +make-sm-column(5)
+  +make-lg-column(3)
+
+#mw-toc-affix
+  margin-right: $grid-gutter-width
+  margin-top: 44px //match the heading

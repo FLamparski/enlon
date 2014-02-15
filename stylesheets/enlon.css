@@ -7663,3 +7663,60 @@ button.close {
 .mw-link-external .glyphicon {
   font-size: 14px;
 }
+
+@media (max-width: 1500px) {
+  /* line 68, ../sass/enlon.sass */
+  .visible-xl {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  /* line 72, ../sass/enlon.sass */
+  .hidden-xl {
+    display: none;
+  }
+}
+
+/* line 76, ../sass/enlon.sass */
+#mw-toc-inflow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  /* line 76, ../sass/enlon.sass */
+  #mw-toc-inflow {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 76, ../sass/enlon.sass */
+  #mw-toc-inflow {
+    float: left;
+    width: 41.6666666667%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 76, ../sass/enlon.sass */
+  #mw-toc-inflow {
+    float: left;
+    width: 25%;
+  }
+}
+
+/* line 81, ../sass/enlon.sass */
+#mw-toc-affix {
+  margin-right: 30px;
+  margin-top: 44px;
+}
